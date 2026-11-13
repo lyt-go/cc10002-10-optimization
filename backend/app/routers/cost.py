@@ -32,8 +32,8 @@ def list_entries(
 
 @router.get("/{entry_id}", response_model=dict)
 def get_entry(entry_id: int) -> dict:
-    """读取单条成本账单明细；不存在时给出可读的错误说明。"""
-    entry = service.get_entry(entry_id)
+    """读取单条成本账单明细；附注归档后预计减少量，历史账单字段保持原值。"""
+    entry = service.get_detail(entry_id)
     if entry is None:
         raise HTTPException(status_code=404, detail=f"成本账单 {entry_id} 不存在或已归档")
     return entry

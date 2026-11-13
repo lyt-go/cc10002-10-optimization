@@ -24,5 +24,6 @@ from app.routers import lifecycle as router_lifecycle
 from app.routers import cost as router_cost
 from app.routers import sync as router_sync
 from app.routers import auditlog as router_auditlog
+from app.routers import revaluation as router_revaluation
 
-ROUTERS = [router_landing, router_ods, router_dwd, router_dim, router_dws, router_ads, router_partition, router_quality, router_lineage, router_backfill, router_cleanrule, router_transform, router_dictionary, router_metamodel, router_lifecycle, router_cost, router_sync, router_auditlog]
+ROUTERS = [router_landing, router_ods, router_dwd, router_dim, router_dws, router_ads, router_partition, router_quality, router_lineage, router_backfill, router_cleanrule, router_transform, router_dictionary, router_metamodel, router_lifecycle, router_cost, router_sync, router_auditlog, router_revaluation]

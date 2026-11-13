@@ -33,3 +33,28 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .link { border: none; background: none; color: var(--brand); cursor: pointer; padding: 0; }
 .page-foot { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .error-text { color: #b42318; }
+.ok-text { color: #067647; }
+.panel { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; margin: 16px 0; }
+.panel-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+.panel-head h3 { margin: 0 0 4px; font-size: 15px; }
+.hint { color: var(--muted); font-size: 12px; white-space: nowrap; }
+.muted-text { color: var(--muted); font-size: 12px; }
+.tag { display: inline-block; border-radius: 999px; padding: 1px 8px; font-size: 12px; background: #eef2f7; color: #475467; }
+.tag.warning { background: #fff4e5; color: #b54708; }
+.tag.success { background: #e8f5ee; color: #067647; }
+.tag.muted { background: #f2f4f7; color: #98a2b3; }
+.batch-list { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }
+.batch-card { border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; background: #fbfcfe; }
+.batch-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.batch-title { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.batch-metrics { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 8px; font-size: 12px; color: #344054; }
+.batch-results { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }
+.result-card { border: 1px dashed var(--border); border-radius: 8px; padding: 10px 12px; background: #fff; }
+.result-head { display: flex; gap: 10px; flex-wrap: wrap; align-items: baseline; }
+.result-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 4px 16px; margin: 8px 0; font-size: 12px; color: #344054; }
+.mini-table { width: 100%; border-collapse: collapse; margin-top: 6px; }
+.mini-table th, .mini-table td { border: 1px solid var(--border); padding: 5px 8px; font-size: 12px; text-align: left; }
+.detail-list { display: flex; flex-wrap: wrap; gap: 6px 22px; font-size: 12px; color: #344054; }
+.clickable-row { cursor: pointer; }
+.clickable-row:hover td { background: #f1f6ff; }
+.form-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; margin: 10px 0; }
